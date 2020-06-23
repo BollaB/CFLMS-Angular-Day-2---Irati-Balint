@@ -1,4 +1,42 @@
 <h1>Welcome</h1>
+
+
+<form [formGroup]="info" (ngSubmit)="onSubmit()">
+ 
+ <label>
+   Name:
+   <input type="text" formControlName="name">
+ </label>
+
+ <label>
+   Species:
+   <input type="text" formControlName="species">
+ </label>
+
+ <label>
+   Gender:
+   <input type="text" formControlName="gender">
+ </label>
+
+ <label>
+   Occupation:
+   <input type="text" formControlName="occupation">
+ </label>
+
+ <label>
+   Significant Other:
+   <input type="text" formControlName="significant_other">
+ </label>
+
+ <label>
+   Nationality:
+   <input type="text" formControlName="nationality">
+ </label>
+ 
+ <input type="submit" class="btn btn-primary" value="Submit">
+
+</form>
+
 <div *ngFor="let car of cars">
 	
 	<h1>{{car.name}}</h1>
