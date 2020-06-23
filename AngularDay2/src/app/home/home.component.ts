@@ -1,0 +1,51 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
+})
+export class HomeComponent implements OnInit {
+
+	cars = [
+{
+	name: "Lightning McQueen",
+	species: "Stock car",
+	gender: "Male",
+	occupation: "Piston Cup Racer",
+	significant_other: "Sally Carrera",
+	nationality: "American",
+	source: "img/car1.png"
+},{
+	name: "Mater",
+	species: "1956-57 International Harvester boom truck",
+	gender: "Male",
+	occupation: "Owner of Tow Mater Towing & Salvage",
+	significant_other: "Holley Shiftwell",
+	nationality: "American",
+	source: "img/car2.png"
+},{
+	name: "Doc Hudson",
+	species: "Hudson Hornet motorcar",
+	gender: "Male",
+	occupation: "MD, judge, former racer, coach and mentor",
+	significant_other: "none",
+	nationality: "American",
+	source: "img/car3.png"
+},{
+	name: "Sally Carrera",
+	species: "Porsche 996 motorcar",
+	gender: "Female",
+	occupation: "town attorney, hotelier",
+	significant_other: "Lightning McQueen",
+	nationality: "American",
+	source: "img/car4.png"
+}
+	]	
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
